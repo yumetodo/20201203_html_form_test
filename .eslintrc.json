@@ -1,0 +1,42 @@
+{
+	"root": true,
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"globals": {
+		"bsCustomFileInput": false
+	},
+	"extends": ["eslint:recommended", "standard", "prettier"],
+	"parserOptions": {
+		"ecmaVersion": 2019
+	},
+	"settings": {
+		"jsdoc": {
+			"mode": "typescript"
+		}
+	},
+	"rules": {
+		"semi": ["error", "always"],
+		"no-tabs": "off",
+		"quotes": [
+			"error",
+			"double",
+			{
+				"avoidEscape": true
+			}
+		],
+		"no-await-in-loop": "error",
+		"require-atomic-updates": "error",
+		"array-callback-return": "error",
+		"default-case": "error",
+		"no-alert": "error",
+		"max-len": [
+			"error",
+			{
+				"code": 120
+			}
+		],
+		"no-invalid-this": "error"
+	}
+}
